@@ -1,0 +1,72 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width:1000px)
+{
+    .main ul{
+        float: right;
+        top:0%;
+    }
+    .main ul li{
+        display: inline-block;
+        margin: 3px;
+        padding: 1px;
+        padding-bottom: 8px;
+    }
+    header{
+        background-image: url(image.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title{
+       top: 55%;
+    }
+
+    .title h3{
+        color: yellowgreen;
+        font-size: 25px;
+    }
+    
+    .title h4{
+        color: yellowgreen;
+        font-size: 20px;
+    }
+
+    .title p{
+        font-size:15px;
+    }
+    .logo img
+    {
+        float:left;
+        width:120px;
+        margin-left:8px;
+        height:100px;
+    }
+    .submenu-1{
+        display:none;
+        top:20%;
+    }
+
+    .main ul li:hover .submenu-1
+    {
+        display: flex;
+        background:transparent;
+        margin-left: -40px;
+        margin-top: 10px;
+        border:1px solid transparent
+    }
+    
+    .main ul li:hover .submenu-1 ul
+    {
+        display: block;
+        margin: 8px;
+    }
+
+}

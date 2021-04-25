@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 8px;
+    background-image: url(image.jpg);
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.main {
+    max-width: auto;
+    margin: auto;
+}
+
+.main ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 15px;
+    font-family: Copperplate, Papyrus, fantasy; 
+}
+
+.main ul li {
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.6s ease;
+    font-size: 20px;
+}
+
+.main ul li .active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.main ul li a:hover {
+    background-color: green;
+    color: yellow;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 75px;
+}
+
+.logo img {
+    float: left;
+    width: 130px;
+    margin-left: 20px;
+    height: 120px;
+}
+
+.submenu-1{
+    display: none;
+    top:7%;
+}
+
+.main ul li:hover .submenu-1
+{
+    display: block;
+    position: absolute;
+    background:none;
+    margin-top: 7px;
+    margin-left: -55px;
+    border: 1px solid transparent;
+}
+
+.main ul li:hover .submenu-1 ul
+{
+    display: block;
+    margin: 7px;
+}
+
+.main ul li:hover .submenu-1 ul li
+{
+    width: 100px;
+    padding: 2px;
+    border-bottom: 1px solid green;
+    background: black;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: none;
+    overflow: auto;
+}
+
+.gallery {
+    border: 1px solid transparent;
+    float: left;
+    width: 390px;
+    top: 15%;
+}
+
+.gallery img {
+    width: 350px;
+    height: 200px;
+}
+
+.desc {
+    padding: auto;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+    font-size: 80px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color: lightblue
+}

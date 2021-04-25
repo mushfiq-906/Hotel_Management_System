@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Copperplate, Papyrus, fantasy; 
+}
+
+.main {
+    max-width: auto;
+    margin: auto;
+}
+
+header {
+    background-image: url(image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.main ul li {
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.6s ease;
+}
+
+.main ul li .active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.main ul li a:hover {
+    background-color: green;
+    color: yellow;
+}
+
+.title {
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 75px;
+}
+
+.title h3,
+h4 {
+    color: yellowgreen;
+    margin-top: 10px;
+}
+
+.title p {
+    font-size: 17px;
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.logo img {
+    float: left;
+    width: 170px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.submenu-1{
+    display: none;
+    top:7%;
+}
+
+.main ul li:hover .submenu-1
+{
+    display: block;
+    position: absolute;
+    background:none;
+    margin-top: 7px;
+    margin-left: -55px;
+    border: 1px solid transparent;
+}
+
+.main ul li:hover .submenu-1 ul
+{
+    display: block;
+    margin: 7px;
+}
+
+.main ul li:hover .submenu-1 ul li
+{
+    width: 90px;
+    padding: 2px;
+    border-bottom: 1px solid green;
+    background: transparent;
+    opacity: 1.0;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy; 
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    color: rgb(32, 216, 42)
+}
+
+h4 {
+    font-family: Copperplate, Papyrus, fantasy; 
+    color: rgb(32, 216, 42);
+}
+
+p{
+    font-family: Copperplate, Papyrus, fantasy; 
+}

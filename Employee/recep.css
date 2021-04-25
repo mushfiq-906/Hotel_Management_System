@@ -1,0 +1,67 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: large;
+    background: url(rec.jpg);
+    background-size: cover;
+    display: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.slidebar {
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    opacity: 0.9;
+    transition: all .5s ease;
+    font-weight: bold;
+}
+
+.slidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    background: #063146;
+    user-select: none;
+}
+
+.slidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 17px;
+    color: white;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    text-align: center;
+    padding-bottom: 2.6%;
+}
+
+ul li:hover a {
+    padding-right: 0px;
+}
+
+.slidebar i {
+    margin-top: 10px;
+}
+
+.slidebar ul a i {
+    margin-right: 14px;
+}
+
+.slidebar ul li.sign-out {
+    margin-top: 2.4in;
+}
