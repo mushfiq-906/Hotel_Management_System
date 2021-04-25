@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receive Bill</title>
+    <link rel="stylesheet" href="bill.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+         <div class="slidebar">
+            <header><i class="fas fa-user-tie"></i>&ensp;Hotel Manager</header>
+            <ul>
+                <li><a href="..\Manage\prepare_bill.html"><i class='far fa-chart-bar'></i>  Prepare Bill  </a></li>
+                <li><a href="..\Manage\payment.html"><i class='fas fa-dollar-sign'></i>  Payment Received  </a></li>
+                <li><a href="..\Manage\refund.html"><i class='fas fa-money-check-alt'></i> Refund  </a></li>
+                <li><a href="..\Manage\reports.html"><i class='fas fa-file-alt'></i>  Reports  </a></li>
+                <li><a href="..\Manage\bill.html"><i class='fas fa-dollar-sign'></i>  Receive Bill  </a></li>
+                <li><a href="..\Manage\menu.html"><i class='fas fa-edit'></i>  Prepare Menu Card  </a></li>
+                <li class="sign-out"><a href="..\Login\main.html"><i class='fas fa-sign-out-alt' style='font-size:24px'></i>Log Out</a></li>
+            </ul>
+        </div>
+    <div class="sign-up">
+        <h1>Receive Bill</h1>
+        <div class="textbox">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <input type="text" placeholder="Name" name="" value="">
+        </div>
+
+        <div class="textbox">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <input type="text" placeholder="Booking Id" name="" value="">
+        </div>
+        <div class="textbox" style="font-size: 17.9;">
+            <i class="fa fa-h-square" aria-hidden="true"></i>&ensp;Room no:
+            <select class="custom">
+                <option selected >Select Here</option>
+                <option value="1">201</option>
+                <option value="2">202</option>
+                <option value="3">203</option>
+                <option value="4">204</option>
+                <option value="5">301</option>
+                <option value="6">302</option>
+                <option value="6">303</option>
+                <option value="6">304</option>
+              </select>
+        </div>
+        
+        <div class="textbox">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" placeholder="Email" name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <input type="text" placeholder="Contact No. " name="" value="">
+        </div>
+        <div class="textbox" style="font-size: 18;">
+            <i class='fas fa-money-bill-alt'></i>
+            <input type="textbox" placeholder="Paid Amount" name="" value="">
+        </div>
+        <div class="check-box">
+            <input class="btn-1" type="checkbox"> &ensp;Send a mail to the guest
+        </div> 
+        <div class="popup" onclick="myFunction()"><input class="btn" type="button" name="" value="Apply">
+            <span class="popuptext" id="myPopup">Successfully Applied for Refund.</span>
+          </div>   
+        
+        <script>
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+        </script>
+
+    </div>    
+</body>
+</html>

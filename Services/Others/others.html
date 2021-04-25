@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Others</title>
+    <link rel="stylesheet" href="others.css">
+    <link rel="stylesheet" href="response.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+   
+
+
+<div class="main" id="section1">
+            <div class="logo">
+                <img src="logo.jpg">
+            </div>
+            <ul>
+                <li class="active"><a href="..\..\Guest\Guest.html">Home</a></li>
+                <li><a href="#">Services</a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li><a href="..\Services\Room\Room.html">Room</a> </li><br>
+                            <li><a href="..\Services\Food\food.html">Food</a> </li><br>
+                            <li><a href="#">Others</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="..\..\Login\main.html">Login</a></li>
+            </ul>
+        
+   
+    <div class="sign-up">
+        <h1>Booking Form</h1>
+        <div class="textbox">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <input type="text" placeholder="First Name" name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <input type="textbox" placeholder="Last Name" name="" value="">
+        </div>
+
+        <div class="textbox">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <input type="text" placeholder="Address" name="" value="">
+        </div>
+        <div class="textbox" style="font-size: 17.9;">
+            <i class="fa fa-h-square" aria-hidden="true"></i>&ensp;Room no:
+            <select class="custom">
+                <option selected >Select Here</option>
+                <option value="1">101</option>
+                <option value="2">102</option>
+                <option value="3">103</option>
+                <option value="4">104</option>
+                <option value="5">105</option>
+                <option value="6">106</option>
+              </select>
+        </div>
+        
+        <div class="textbox">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input type="text" placeholder="Email" name="" value="">
+        </div>
+        
+        <div class="textbox">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <input type="text" placeholder="Contact No. " name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-calendar-check-o"></i> 
+            <input type="date" placeholder="Check-in" placeholder="Check-indd-mm-yyyy">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-calendar-times-o"></i> 
+            <input type="date" name="Check-out" placeholder="dd-mm-yyyy">
+        </div>
+        <div class="textbox" style="font-size: 18;">
+            <i class='fas fa-money-bill-alt'></i>
+            <input type="textbox" placeholder="Advance Payment" name="" value="">
+        </div>
+        <div class="check-box">
+            <input class="btn-1" type="checkbox"> &ensp;Agree to the terms and conditions
+        </div>    
+
+        <input class="btn" type="button" name="" value="Confirm Booking">
+    </div>    
+
+    
+
+    <div class="he">
+        <a href="..\..\credit card\card.html">Make Payment</a>
+        <br>
+        <br>
+        <a href="#section2">Cancel Booking</a>
+    </div>
+
+</div>
+
+<div class="main" id="section2">
+
+    <div class="logo">
+        <img src="logo.jpg">
+    </div>
+    <ul>
+        <li class="active"><a href="..\..\Guest\Guest.html">Home</a></li>
+        <li><a href="#">Services</a>
+            <div class="submenu-1">
+                <ul>
+                    <li><a href="..\Services\Room\Room.html">Room</a> </li><br>
+                    <li><a href="..\Services\Food\food.html">Food</a> </li><br>
+                    <li><a href="#">Others</a> </li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="..\..\Login\main.html">Login</a></li>
+    </ul>
+
+<div class="sign-up">
+<h1>Cancel Booking</h1>
+<div class="textbox">
+    <i class="fa fa-address-book" aria-hidden="true"></i>
+    <input type="text" placeholder="Name" name="" value="">
+</div>
+
+<div class="textbox">
+    <i class='fas fa-edit' aria-hidden="true"></i>
+    <input type="text" placeholder="Booking Id" name="" value="">
+</div>
+<div class="textbox" style="font-size: 17.9;">
+    <i class="fa fa-h-square" aria-hidden="true"></i>&ensp;Room no:
+    <select class="custom">
+        <option selected >Select Here</option>
+        <option value="1">201</option>
+        <option value="2">202</option>
+        <option value="3">203</option>
+        <option value="4">204</option>
+        <option value="5">301</option>
+        <option value="6">302</option>
+        <option value="6">303</option>
+        <option value="6">304</option>
+      </select>
+</div>
+
+<div class="textbox">
+    <i class="fa fa-envelope" aria-hidden="true"></i>
+    <input type="text" placeholder="Email" name="" value="">
+</div>
+<div class="textbox">
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <input type="text" placeholder="Contact No. " name="" value="">
+</div>
+<div class="check-box">
+    <input class="btn-1" type="checkbox"> &ensp;Also apply for refund
+</div> 
+<div class="popup" onclick="myFunction()"><input class="btn" type="button" name="" value="Apply">
+    <span class="popuptext" id="myPopup">Booking cancelled.</span>
+  </div>   
+
+<script>
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+</script>
+
+</div>
+
+</div>
+</body>
+</html>

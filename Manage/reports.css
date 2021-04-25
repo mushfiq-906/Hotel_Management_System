@@ -1,0 +1,96 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: large;
+    font-weight: bold; 
+    background: url(h4.jpg);
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.slidebar {
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    opacity: 0.9;
+    transition: all .5s ease;
+    font-weight:bold;
+}
+
+.slidebar header {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+    background: #063146;
+    user-select: none;
+}
+
+.slidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 17px;
+    color: white;
+    padding-right: 20px;
+    box-sizing: border-box;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+    text-align: center;
+}
+
+ul li:hover a {
+    padding-right: 0px;
+}
+
+.slidebar i {
+    margin-top: 10px;
+}
+
+.slidebar ul a i {
+    margin-right: 14px;
+}
+
+.slidebar ul li.sign-out {
+    margin-top: 2.1in;
+}
+
+.data {
+    width: 60%;
+    height: 100%;
+    left: 15%;
+    top: 6%;
+    margin: auto;
+    position: absolute;
+    font-size: large;
+
+}
+h1 {
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+    margin-right: 250px; 
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: rgb(67, 31, 231);
+}
+.kimi {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bold;
+    font-size: 55px;
+    margin-right: 250px;
+    margin-left: 25%; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color:rgb(65, 37, 139);
+}

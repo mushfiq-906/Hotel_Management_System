@@ -1,0 +1,89 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width:900px)
+{
+    * {
+        box-sizing: border-box;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    .main ul{
+        float: right;
+        top:0%;
+    }
+    .main ul li{
+        display: inline-block;
+        margin: 3px;
+        padding: 1px;
+        padding-bottom: 8px;
+    }
+    header{
+        background-image: url(hotel1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title{
+        margin-top: 20%;
+    }
+    
+    .logo img
+    {
+        float:left;
+        width:120px;
+        margin-left:8px;
+        height:100px;
+    }
+
+    .main ul li:hover .submenu-1
+    {
+        display: none;
+        background:transparent;
+        margin-left: -30px;
+        margin-top: 5px;
+        border:1px solid transparent
+    }
+
+    
+    .main ul li:hover .submenu-1 ul
+    {
+        display: block;
+        margin: 8px;
+    }
+
+    .title p{
+        width: 130%;
+        text-align: absolute;
+    }
+
+    .data {
+        width: 80%;
+        height: 50%;
+        left: 15%;
+        right: 15%;
+        position: absolute;
+        top:7%;
+        font-family: Copperplate, Papyrus, fantasy;
+        font-size: 14px;
+    }
+    
+    .kimi {
+            font-family: 'Brush Script MT', cursive;
+            
+            font-size: 32px;
+            margin-left: 30%; 
+            margin-bottom: 10px;
+            color:whitesmoke;
+    }
+
+}

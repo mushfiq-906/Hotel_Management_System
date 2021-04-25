@@ -1,0 +1,102 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width:900px)
+{
+    body{
+        font-family: sans-serif;
+        background: url(Login.PNG);
+        background-size: cover;
+        height:100%;
+        background-position: fixed;
+    }
+    .login-box{
+        width: 480px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+        color: white;
+    }
+    
+    .login-box h1{
+        float: center;
+        font-size: 30px;
+        border-bottom: 5px solid #4caf50;
+        margin-bottom: 10px;
+        padding: 7px 0;
+    }
+    .textbox{
+        width: 100%;
+        overflow: hidden;
+        font-size: 14px;
+        padding: 4px 0;
+        margin: 4px 0 ;
+        border-bottom: 1px solid #4caf50;
+    }
+    .textbox i{
+        width: 22px;
+        float: left;
+        text-align: center;  
+    }
+    .textbox input{
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 14px;
+        width: 80%;
+        float: left;
+        margin: 0 10px;
+    }
+    .btn{
+        width: 100%;
+        background: none;
+        border: 3px solid #4caf50;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .btn-1{
+        cursor: pointer;
+        margin-top: 8px;
+        margin-bottom: 8px ;
+    }
+    
+    .container .check-box{
+        font-size: 14px;
+    }
+    
+    
+    .container
+    {
+        display:flex;
+        flex-direction:row;
+        width: 150%;
+    }
+    
+    a{
+        color:white;
+        text-decoration: blink;
+    }
+    a:hover{
+        color:skyblue;
+    }
+    ::placeholder{
+        color: aliceblue;
+        opacity: 0.9;
+    }
+    .custom{
+        font-size: 15px;
+        opacity: 0.7;
+    }
+}

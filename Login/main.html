@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login Form </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="response.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" placeholder="Username " name="" value="">
+        </div>
+        <div class="textbox">
+            <i class="fa fa-lock" aria-hidden="true"></i>
+            <input type="password" placeholder="Password " name="" value="">
+        </div>
+        <div class="textbox" style="font-size: 17.8px;">
+            <i class="fa fa-h-square" aria-hidden="true"></i>&ensp;Role :
+            <select class="custom" id="vl">
+                <option selected >Select</option>
+                <option value="1">Guest</option>
+                <option value="2">Admin</option>
+                <option value="3">Manager</option>
+                <option value="4">Receptionist</option>
+                
+              </select>
+        </div>
+        <button class="btn" id="go">Sign in</button>
+        <div class="container">
+            <div class="check-box">
+                <input class="btn-1" type="checkbox" style="margin-right:0px; font-size:16px;
+                font-family: sans-serif; color:white"> Remember me
+                <a href="#" style="margin-right:0px; font-size:15px;
+                font-family: sans-serif;color:white">&emsp;&emsp; Reset password</a>
+            </div> 
+        </div><br>
+            Don't have account?<a href="..\Sign Up\sgnup.html">&ensp;&emsp;Sign Up</a>
+    </div> 
+</body> 
+<script>
+    function getel(x){ 
+        return document.getElementById(x)
+    }
+    getel('go').onclick=()=>{
+        var x=getel('vl').value;
+        if(x=='1')window.location.href='../Guest/Guest.html';
+        if(x=='2')window.location.href='../Admin/Admin.html';
+        if(x=='3')window.location.href='../Manage/Manage.html';
+        if(x=='4')window.location.href='../Employee/recep.html';
+    }
+</script>   
+</html>

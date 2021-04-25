@@ -1,0 +1,242 @@
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@media screen and (max-width:900px)
+{
+    .main ul{
+        float: right;
+    }
+    .main ul li{
+        display: inline-block;
+        margin: 5px;
+        padding: 1px;
+    }
+    header{
+        background-image: url(hotel1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title h1{
+        color: #fff;
+        font-size: 45px;
+    }
+    
+    .logo img
+    {
+        float:left;
+        width:120px;
+        margin-left:10px;
+        height:100px;
+    }
+
+    .main ul li:hover .submenu-1
+    {
+        display: none;
+        background:transparent;
+        margin-left: -35px;
+        margin-top: 20px;
+        border:1px solid transparent
+    }
+
+    
+    .main ul li:hover .submenu-1 ul
+    {
+        display: block;
+        margin: 8px;
+    }
+
+    #section1
+    {
+        height:100vh;
+        background-image: url(hotel1.jpg);
+    }
+
+    #section2
+    {
+        height:100vh;
+        background-image: url(hotel1.jpg);
+        
+    }
+
+    .sign-up {
+        width: 430px;
+        position: absolute;
+        top: 48%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background: rgb(9, 37, 44);
+        opacity: 0.8;
+        padding-left: 35px;
+    }
+    
+    .sign-up h1 {
+        font-size: 30px;
+        border-bottom: 5px solid #4caf50;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    .textbox {
+        width: 90%;
+        overflow: hidden;
+        font-size: 15px;
+        padding: 8px 0;
+        margin: 8px 0;
+        border-bottom: 1px solid #4caf50;
+    }
+    
+    .textbox i {
+        width: 26px;
+        float: left;
+        text-align: center;
+    }
+    
+    .textbox input {
+        border: none;
+        outline: none;
+        background: none;
+        color: white;
+        font-size: 15px;
+        width: 80%;
+        float: left;
+        margin: 0 10px;
+    }
+    
+    .custom {
+        font-size: 15px;
+        opacity: 0.7;
+    }
+    
+    .btn {
+        width: 90%;
+        background: none;
+        border: 3px solid #4caf50;
+        color: white;
+        padding: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        align-content: center;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    ::placeholder {
+        color: aliceblue;
+        opacity: 0.9;
+    }
+    
+    .btn-1 {
+        cursor: pointer;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+    
+    .check-box {
+        font-size: 19px;
+    }
+    
+    #section1 .sign-up{
+        opacity:1.0;
+        transform: translate(10%,-40%);
+    }
+    
+    #section1 .he{
+        transform: translate(-10%,200%);
+        font-size: x-large;
+    }
+    
+    #section1 .he a{
+        color: white;
+    }   
+    
+    #section1 .he a:hover{
+        color:tomato;
+    }   
+    
+    #section2 .sign-up{
+        transform: translate(0%,130%);
+        opacity:1.0;
+    }
+    
+    
+    /* Popup container - can be anything you want */
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        width: 90%;
+        background: none;
+        color: white;
+        padding: 5px;
+        font-size: 17px;
+        cursor: pointer;
+        align-content: center;
+      }
+      
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 260px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 42%;
+        margin-left: -80px;
+      }
+      
+      /* Popup arrow */
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+
+}
